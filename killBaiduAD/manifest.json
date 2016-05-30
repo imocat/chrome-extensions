@@ -1,0 +1,23 @@
+{
+  "name" : "KillBaiduAD",
+  "manifest_version" : 2,
+  "version" : "0.0.2",
+  "description" : "还你一个没有广告的百度",
+  "content_security_policy" : "script-src 'self'; object-src 'self'",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "https:\/\/www.baidu.com\/*",
+        "http:\/\/*.baidu.com\/*"
+      ],
+      "css" : [],
+      "js" : [
+        "jquery.min.js",
+        "app.js"
+      ]
+    }
+  ],
+  "permissions" : [
+    "bookmarks"
+  ]
+}

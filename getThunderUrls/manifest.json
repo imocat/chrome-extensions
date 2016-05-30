@@ -1,0 +1,25 @@
+{
+  "permissions" : [
+    "bookmarks"
+  ],
+  "manifest_version" : 2,
+  "version" : "0.0.2",
+  "description" : "获取页面中迅雷链接",
+  "content_security_policy" : "script-src 'self'; object-src 'self'",
+  "name" : "GetThunderUrls",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http:\/\/www.4567.tv\/*",
+        "http:\/\/www.dytt.com\/xiazai\/*"
+      ],
+      "css" : [
+        "app.css"
+      ],
+      "js" : [
+        "jquery.min.js",
+        "app.js"
+      ]
+    }
+  ]
+}
