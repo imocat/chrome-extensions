@@ -18,7 +18,9 @@
 				$(this).click();
 			});
 
-		}, 200);
+			$('[data-tuiguang]').parent().parent().remove();
+
+		}, 100);
 
 	});
 

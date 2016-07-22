@@ -1,6 +1,8 @@
 {
   "permissions" : [
-    "bookmarks"
+	"tabs", 
+    "http://*/*",
+    "https://*/*"
   ],
   "manifest_version" : 2,
   "version" : "0.0.2",
@@ -10,8 +12,8 @@
   "content_scripts" : [
     {
       "matches" : [
-        "http:\/\/www.4567.tv\/*",
-        "http:\/\/www.dytt.com\/xiazai\/*"
+    	"http://*/*",
+	    "https://*/*"
       ],
       "css" : [
         "app.css"
